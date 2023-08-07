@@ -1,0 +1,40 @@
+.navbar {
+  margin-top: 5px;
+  background-color: #222;
+  padding: 15px 50px 15px 50px;
+  border-radius: 15px 15px 0 0;
+}
+.navleft {
+  color: #fff;
+}
+.navleft {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.req-button {
+  border-color: #fff;
+}
+.sign-button {
+  background-color: #4c5fd5;
+}
+.header {
+  background-color: #dadbf1;
+  min-height: 300px;
+  padding-top: 60px;
+}
+.header > .search-bar-title > h1 {
+  font-size: 56px;
+  padding-bottom: 15px;
+}
+.push-mid {
+  display: flex;
+  justify-content: center;
+}
+.header-search > .input-group {
+}
+.header-search > .input-group > input {
+  border-radius: 0;
+}
+.header-search > .input-group > span {
+  border-radius: 0;
+  border: 0;
+}

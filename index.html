@@ -1,13 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pages/abstract/css/style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="container" id="app">
+      <div class="navbar" style="display: flex; justify-content: space-between">
+        <div class="navleft">
+          <span class="page-title">Abstract</span
+          ><span style="padding-left: 5px">|</span>
+          <span>Help Center</span>
+        </div>
+        <div class="navright">
+          <button
+            type="button"
+            class="btn btn-dark req-button"
+            style="margin-right: 10px"
+          >
+            Submit a request
+          </button>
+          <button type="button" class="btn btn-primary sign-button">
+            Sign in
+          </button>
+        </div>
+      </div>
+      <div class="header">
+        <div class="push-mid search-bar-title">
+          <h1>How can we help?</h1>
+        </div>
+        <div class="push-mid header-search">
+          <div class="input-group" style="max-width: 600px">
+            <input type="text" class="form-control" placeholder="Search" />
+            <span class="btn btn-light input-group-text" id="basic-addon2"
+              >→</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+      src="/main.js"
+    ></script>
   </body>
 </html>
