@@ -42,8 +42,6 @@ const content = [
 ];
 
 const generateJson = () => {
-  var main_content = document.getElementsByClassName("content-obj");
-
   content.map((item) => {
     $(".content-obj").append(`
     <div class="col-md-6 content-list-each">

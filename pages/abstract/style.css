@@ -21,19 +21,21 @@
   height: 32px;
 }
 .navright > button {
-  padding: 6px 32px;
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 4px 20px;
 }
 .req-button {
   border-color: #fff;
+  font-size: 24px;
 }
 .sign-button {
   background-color: #4c5fd5;
 }
 .header {
   background-color: #dadbf1;
-  min-height: 300px;
-  padding-top: 60px;
+  padding-top: 80px;
+  padding-bottom: 115px;
 }
 .search-bar-title > h1 {
   font-size: 56px;
@@ -132,6 +134,12 @@
   color: #fff;
   padding-top: 35px;
   padding-right: 13%;
+}
+.footer-main-content > .col > h5 {
+  font-weight: bold;
+}
+.footer-main-content > .col > a {
+  font-weight: 500;
 }
 
 @media (min-width: 1400px) {
