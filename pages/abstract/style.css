@@ -1,8 +1,9 @@
+#app {
+  font-family: "Libre Franklin", sans-serif;
+}
 .navbar {
-  margin-top: 5px;
   background-color: #222;
   padding: 15px 50px 15px 50px;
-  border-radius: 15px 15px 0 0;
 }
 .navleft {
   color: #fff;
@@ -21,8 +22,8 @@
   min-height: 300px;
   padding-top: 60px;
 }
-.header > .search-bar-title > h1 {
-  font-size: 56px;
+.search-bar-title > h1 {
+  font-size: 60px;
   padding-bottom: 15px;
 }
 .push-mid {
@@ -37,13 +38,10 @@
   border: 0;
 }
 .content {
-  padding-left: 10%;
   padding-bottom: 100px;
 }
 .content-list-each {
   padding-top: 70px;
-  display: flex;
-  justify-content: center;
 }
 .img-1 > img {
   max-width: 120px;
@@ -51,7 +49,6 @@
   padding-top: 0;
 }
 .content-text {
-  max-width: 70%;
   max-height: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -65,16 +62,16 @@
   min-height: 300px;
   border-radius: 0 0 15px 15px;
 }
-.footer > .row > .col > h5 {
+.footer > .container > .row > .col > h5 {
   margin-bottom: 15px;
 }
-.footer > .row > .col > h6 {
+.footer > .container > .row > .col > h6 {
   margin: 0;
   margin-top: 15px;
   font-size: 12px;
   padding: 0;
 }
-.footer > .row > .col > a {
+.footer > .container > .row > .col > a {
   text-decoration: none;
   color: #fff;
   font-size: 12px;
@@ -92,4 +89,7 @@
 }
 .footer-main-content {
   padding-bottom: 40px;
+  color: #fff;
+  padding-top: 35px;
+  padding-right: 13%;
 }
