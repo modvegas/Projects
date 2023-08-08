@@ -2,14 +2,27 @@
   font-family: "Libre Franklin", sans-serif;
 }
 .navbar {
-  background-color: #222;
+  background-color: #000;
   padding: 15px 50px 15px 50px;
 }
 .navleft {
   color: #fff;
+  font-weight: 500;
+  font-size: 20px;
 }
-.navleft {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.navleft > span {
+  position: relative;
+  top: 3px;
+}
+.abstract-logo {
+  height: 26px;
+}
+.abstract-logo-mark {
+  height: 32px;
+}
+.navright > button {
+  padding: 6px 32px;
+  font-size: 18px;
 }
 .req-button {
   border-color: #fff;
@@ -23,35 +36,62 @@
   padding-top: 60px;
 }
 .search-bar-title > h1 {
-  font-size: 60px;
+  font-size: 56px;
   padding-bottom: 15px;
 }
 .push-mid {
   display: flex;
   justify-content: center;
 }
-.header-search > .input-group > input {
-  border-radius: 0;
+.header-search > .input-group {
+  max-width: 600px;
+  box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+  border-radius: none;
 }
-.header-search > .input-group > span {
+.input-icon {
   border-radius: 0;
-  border: 0;
+  padding: 5px 15px 5px 15px;
+  background-color: #fff;
+}
+.form-control {
+  border-radius: 1px;
+  border: 1px solid #000;
+}
+.arrow-svg {
+  fill: #000;
+  position: absolute;
+  right: 15px;
+  bottom: -5px;
+  width: 28px;
+  z-index: 100;
+  transition: all 0.3s;
+  transform: translateY(-45%);
 }
 .content {
   padding-bottom: 100px;
+  padding-top: 50px;
+}
+.content > .container {
+  max-width: 1400px;
 }
 .content-list-each {
   padding-top: 70px;
 }
 .img-1 > img {
-  max-width: 120px;
+  max-width: 100px;
   padding: 15px;
   padding-top: 0;
 }
 .content-text {
   max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+.icerik-1 > h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.icerik-1 {
+  font-weight: 500;
+  font-size: 18px;
 }
 .icerik-1 > a {
   text-decoration: none;
@@ -92,4 +132,10 @@
   color: #fff;
   padding-top: 35px;
   padding-right: 13%;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1550px;
+  }
 }

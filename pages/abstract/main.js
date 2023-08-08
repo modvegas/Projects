@@ -1,50 +1,48 @@
 const content = [
   {
     logo: "images/img.png",
-    title: "Lorem, ipsum dolor.",
+    title: "Using Abstract",
     description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nihil architecto rem distinctio facilis?",
+      "Abstract lets you manage, version, and document your designs in one place.",
     url: "#",
   },
   {
     logo: "images/img2.png",
-    title: "Lorem, ipsum dolor.",
+    title: "Manage your account",
     description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nihil architecto rem distinctio facilis?Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "Configure your account settings, such as your email, profile details, and password.",
     url: "#",
   },
   {
     logo: "images/img3.png",
-    title: "Lorem, ipsum dolor.",
+    title: "Manage organizations, teams, and projects",
     description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nihil architecto rem distinctio facilis?",
+      "Use Abstract organizations, teams, and projects to organize your people and your work.",
     url: "#",
   },
   {
     logo: "images/img4.png",
-    title: "Lorem, ipsum dolor.",
-    description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Manage billing",
+    description: "Change subscriptions and payment details.",
     url: "#",
   },
   {
     logo: "images/img5.png",
-    title: "Lorem, ipsum dolor.",
+    title: "Authenticate to Abstract",
     description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta",
+      "Set up and configure SSO, SCIM, and Just-in-Time provisioning.",
     url: "#",
   },
   {
     logo: "images/img6.png",
-    title: "Lorem, ipsum dolor.",
-    description:
-      "Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nihil architecto rem distinctio facilis?Lorem ipsum",
+    title: "Abstract support",
+    description: "Get in touch with a human.",
     url: "#",
   },
 ];
 
 const generateJson = () => {
-  var main_content = document.getElementsByClassName("content-obj")
+  var main_content = document.getElementsByClassName("content-obj");
 
   content.map((item) => {
     $(".content-obj").append(`
