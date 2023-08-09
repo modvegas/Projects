@@ -135,7 +135,7 @@ window.onload = () => {
     </div>`);
   });
   Object.entries(footerLinks2).map(([key, links]) =>
-    $(`#${key}`).insertBefore(
+    $(`#${key}`).insertAfter(
       `${links.map((link) => `<a href="#">${link}</a>`)}`
     )
   );
