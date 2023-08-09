@@ -40,29 +40,13 @@ const content = [
     url: "#",
   },
 ];
-
-/* const footerLinks = [
-  {
-    title: "Abstract",
-    link1: ["Start Trial"],
-    link2: ["Pricing"],
-    link3: ["Download"],
-  },
-  {
-    title: "Resources",
-    link1: [""],
-    link2: ["Pricing"],
-    link3: ["Download"],
-  },
-];  */
-
 const footerLinks = [
   {
     title: "Abstract",
-    links: ["Start Trial", "Pricing", "Download"],
+    links: ["Start Trial"],
   },
   {
-    title: "Resource",
+    title: "Resources",
     links: ["Blog", "Help Center", "Release Notes", "Status"],
   },
   {
@@ -73,19 +57,7 @@ const footerLinks = [
     title: "Company",
     links: ["About Us", "Careers", "Legal"],
   },
-  {
-    title: "Contact Us",
-    links: ["info@abstract"],
-  },
 ];
-
-const footerLinks2 = {
-  Abstract: ["Start Trial", "Pricing", "Download"],
-  Resource: ["Blog", "Help Center", "Release Notes", "Status"],
-  Community: ["Twitter", "LinkedIn", "Facebook", "Dribbble", "Podcast"],
-  Company: ["About Us", "Careers", "Legal"],
-  "Contact Us": ["info@abstract"],
-};
 
 const generateJson = () => {
   content.map((item) => {
@@ -106,37 +78,23 @@ const generateJson = () => {
     </div>
     `);
   });
-  // footerLinks.map((item) => {
-  //   $(".footer-main-content").append(`
-  //     <div class="col">
-  //           <h5>${item.title}</h5>
-  //           ${item.links.map((link) => {
-  //             `
-  //            <a href="#"></a>
-  //            `;
-  //           })}
-  //     </div>
-  //   `);
-  // });
+
+  footerLinks.map((item) => {
+    $("#footer").append(
+      `
+    <div class="col">
+      <h5>${item.title}</h5>` +
+        item.links.map((url) => {
+          `<a href="#">${item.url}</a>`
+        }) +
+        `
+    </div>`
+    );
+    if (item.title === "Company") {
+    }
+  });
 };
 
 window.onload = () => {
   generateJson();
-  Object.keys(footerLinks2).map((key, index) => {
-    if (key === "Contact Us") {
-      $("#Company").after(`<h6 id=${key}>
-      ${key}
-      </h6>`);
-      return;
-    }
-    $("#footer").append(`
-    <div class="col" id="footer-${key}">
-      <h5>${key}</h5>
-    </div>`);
-  });
-  Object.entries(footerLinks2).map(([key, links]) =>
-    $(`#${key}`).insertAfter(
-      `${links.map((link) => `<a href="#">${link}</a>`)}`
-    )
-  );
 };
