@@ -41,6 +41,52 @@ const content = [
   },
 ];
 
+/* const footerLinks = [
+  {
+    title: "Abstract",
+    link1: ["Start Trial"],
+    link2: ["Pricing"],
+    link3: ["Download"],
+  },
+  {
+    title: "Resources",
+    link1: [""],
+    link2: ["Pricing"],
+    link3: ["Download"],
+  },
+];  */
+
+const footerLinks = [
+  {
+    title: "Abstract",
+    links: ["Start Trial", "Pricing", "Download"],
+  },
+  {
+    title: "Resource",
+    links: ["Blog", "Help Center", "Release Notes", "Status"],
+  },
+  {
+    title: "Community",
+    links: ["Twitter", "LinkedIn", "Facebook", "Dribbble", "Podcast"],
+  },
+  {
+    title: "Company",
+    links: ["About Us", "Careers", "Legal"],
+  },
+  {
+    title: "Contact Us",
+    links: ["info@abstract"],
+  },
+];
+
+const footerLinks2 = {
+  Abstract: ["Start Trial", "Pricing", "Download"],
+  Resource: ["Blog", "Help Center", "Release Notes", "Status"],
+  Community: ["Twitter", "LinkedIn", "Facebook", "Dribbble", "Podcast"],
+  Company: ["About Us", "Careers", "Legal"],
+  "Contact Us": ["info@abstract"],
+};
+
 const generateJson = () => {
   content.map((item) => {
     $(".content-obj").append(`
@@ -60,8 +106,37 @@ const generateJson = () => {
     </div>
     `);
   });
+  // footerLinks.map((item) => {
+  //   $(".footer-main-content").append(`
+  //     <div class="col">
+  //           <h5>${item.title}</h5>
+  //           ${item.links.map((link) => {
+  //             `
+  //            <a href="#"></a>
+  //            `;
+  //           })}
+  //     </div>
+  //   `);
+  // });
 };
 
 window.onload = () => {
   generateJson();
+  Object.keys(footerLinks2).map((key, index) => {
+    if (key === "Contact Us") {
+      $("#Company").after(`<h6 id=${key}>
+      ${key}
+      </h6>`);
+      return;
+    }
+    $("#footer").append(`
+    <div class="col" id="footer-${key}">
+      <h5>${key}</h5>
+    </div>`);
+  });
+  Object.entries(footerLinks2).map(([key, links]) =>
+    $(`#${key}`).insertBefore(
+      `${links.map((link) => `<a href="#">${link}</a>`)}`
+    )
+  );
 };
