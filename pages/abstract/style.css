@@ -102,7 +102,6 @@
 .footer {
   background-color: #000;
   min-height: 300px;
-  border-radius: 0 0 15px 15px;
 }
 .footer > .container > .row > .col > h5 {
   margin-bottom: 15px;
