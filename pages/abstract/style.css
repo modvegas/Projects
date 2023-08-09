@@ -114,7 +114,6 @@
   padding: 0;
 }
 .footer > .container > .row > .col > a {
-  text-decoration: none;
   color: #fff;
   font-size: 12px;
   display: block;
@@ -139,7 +138,11 @@
   font-weight: bold;
 }
 .footer-main-content > .col > a {
+  text-decoration: none;
   font-weight: 500;
+}
+.footer-main-content > .col > a:hover {
+  text-decoration: underline solid #fff;
 }
 
 @media (min-width: 1400px) {
