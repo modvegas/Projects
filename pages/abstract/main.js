@@ -82,7 +82,7 @@ const generateJson = () => {
   footerLinks.map((item) => {
     $("#footer").append(
       `
-        <div class="col">
+        <div class="col footer-links">
         <h5>${item.title}</h5>
         ${item.links
           .map((url) => {
@@ -93,8 +93,12 @@ const generateJson = () => {
         </div>`
     );
   });
+  function footerLast() {}
 };
 
 window.onload = () => {
   generateJson();
+  $(".footer-links").last()
+    .append(`<h6 style="margin-top: 30px;font-size:14px;margin-bottom: 5px;">Contact Us</h6>
+  <a href="#">info@abstract.com</a>`);
 };

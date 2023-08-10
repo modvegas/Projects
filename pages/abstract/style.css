@@ -102,30 +102,6 @@
   background-color: #000;
   min-height: 300px;
 }
-.footer > .container > .row > .col > h5 {
-  margin-bottom: 15px;
-}
-.footer > .container > .row > .col > h6 {
-  margin: 0;
-  margin-top: 15px;
-  font-size: 12px;
-  padding: 0;
-}
-.footer > .container > .row > .col > a {
-  color: #fff;
-  font-size: 12px;
-  display: block;
-}
-.copyright-logo {
-  width: 35px;
-  padding-bottom: 10px;
-}
-.copyright-text {
-  font-size: 13px;
-}
-.footer-logo-content {
-  justify-content: flex-end;
-}
 .footer-main-content {
   padding-bottom: 40px;
   color: #fff;
@@ -137,10 +113,39 @@
 }
 .footer-main-content > .col > a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 .footer-main-content > .col > a:hover {
   text-decoration: underline solid #fff;
+}
+.footer-links > h5 {
+  margin-bottom: 15px;
+}
+.footer-links > h6 {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 12px;
+  padding: 0;
+  font-weight: 600;
+}
+.footer-links > a {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+}
+.copyright-section {
+  position: relative;
+  bottom: 50px;
+}
+.copyright-logo {
+  width: 35px;
+  padding-bottom: 10px;
+}
+.copyright-text {
+  font-size: 13px;
+}
+.footer-logo-content {
+  justify-content: flex-end;
 }
 .abstract-logo-footer {
   width: 115px;
