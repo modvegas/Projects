@@ -43,7 +43,7 @@ const content = [
 const footerLinks = [
   {
     title: "Abstract",
-    links: ["Start Trial"],
+    links: ["Start Trial", "Pricing", "Download"],
   },
   {
     title: "Resources",
@@ -80,18 +80,17 @@ const generateJson = () => {
   });
 
   footerLinks.map((item) => {
+    i = footerLinks.indexOf(item);
     $("#footer").append(
       `
-    <div class="col">
+    <div class="col" id="footer-list${i}">
       <h5>${item.title}</h5>
-        ${item.links.map((url) => {
-          `<a href="#">${item.url}</a>`;
-        })}
+      ${item.links.map((link) => {
+        $(`#footer-list${i}`).append(`<a href="#">${console.log(link)}</a>`);
+      })}
         
     </div>`
     );
-    if (item.title === "Company") {
-    }
   });
 };
 

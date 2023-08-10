@@ -14,7 +14,10 @@
   position: relative;
   top: 3px;
 }
-.nav-title:hover, .nav-separator {cursor: default;}
+.nav-title:hover,
+.nav-separator {
+  cursor: default;
+}
 .abstract-logo {
   height: 26px;
 }
@@ -138,6 +141,14 @@
 }
 .footer-main-content > .col > a:hover {
   text-decoration: underline solid #fff;
+}
+.abstract-logo-footer {
+  width: 115px;
+  margin-bottom: 15px;
+}
+.copyright-text {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 @media (min-width: 1400px) {
