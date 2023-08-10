@@ -80,16 +80,17 @@ const generateJson = () => {
   });
 
   footerLinks.map((item) => {
-    i = footerLinks.indexOf(item);
     $("#footer").append(
       `
-    <div class="col" id="footer-list${i}">
-      <h5>${item.title}</h5>
-      ${item.links.map((link) => {
-        $(`#footer-list${i}`).append(`<a href="#">${console.log(link)}</a>`);
-      })}
-        
-    </div>`
+        <div class="col">
+        <h5>${item.title}</h5>
+        ${item.links
+          .map((url) => {
+            return `<a href="#">${url}</a>`;
+          })
+          .join("")}
+
+        </div>`
     );
   });
 };
