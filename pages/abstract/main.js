@@ -83,11 +83,11 @@ const generateJson = () => {
     $("#footer").append(
       `
     <div class="col">
-      <h5>${item.title}</h5>` +
-        item.links.map((url) => {
-          `<a href="#">${item.url}</a>`
-        }) +
-        `
+      <h5>${item.title}</h5>
+        ${item.links.map((url) => {
+          `<a href="#">${item.url}</a>`;
+        })}
+        
     </div>`
     );
     if (item.title === "Company") {
