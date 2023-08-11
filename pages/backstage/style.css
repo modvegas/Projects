@@ -1,8 +1,17 @@
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   background-color: #ff608c;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  scroll-snap-type: x mandatory;
 }
 a {
   text-decoration: none;
@@ -16,7 +25,7 @@ a:hover {
 }
 .header {
   padding-top: 20px;
-  position: absolute;
+  position: fixed;
   left: 15px;
   top: 0;
   z-index: 2;
@@ -26,20 +35,20 @@ a:hover {
   vertical-align: middle;
 }
 .contact {
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 20px;
   z-index: 2;
 }
 .info {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 22px;
   width: 320px;
   margin-top: 0;
 }
 .issues {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   right: 15px;
   width: 200px;
@@ -73,14 +82,14 @@ p {
 .copyright > a:hover {
   text-decoration: none;
 }
-.content {
-  width: 100%;
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
 }
 .page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 23vh;
   text-align: center;
 }
 .page > img {
