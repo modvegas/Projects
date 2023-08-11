@@ -46,6 +46,7 @@ a:hover {
   left: 22px;
   width: 320px;
   margin-top: 0;
+  z-index: 2;
 }
 .issues {
   position: fixed;
@@ -107,4 +108,14 @@ section {
 .order > a {
   color: #fff;
   font-size: 15px;
+}
+#issue7,
+.issue7:active {
+  scroll-behavior: smooth;
+  transition: all ease-in 1s;
+}
+#issue6 {
+  scroll-behavior: smooth;
+  background-color: #fff;
+  transition: all ease-in 1s;
 }
