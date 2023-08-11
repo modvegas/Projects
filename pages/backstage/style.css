@@ -5,6 +5,16 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+a {
+  text-decoration: none;
+  color: #251d20;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+a:hover {
+  text-decoration: underline;
+}
 .header {
   padding-top: 20px;
   position: absolute;
@@ -22,20 +32,29 @@ body {
   top: 20px;
   z-index: 2;
 }
-.contact-link {
-  text-decoration: none;
-  color: #251d20;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25px;
-}
-.contact-link:hover {
-  text-decoration: underline;
-}
 .info {
   position: absolute;
   bottom: 0;
   left: 22px;
   width: 320px;
   margin-top: 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+.copyright,
+.copyright > a {
+  font-size: 12px;
+  font-weight: normal;
+}
+.description > a,
+.copyright > a {
+  text-decoration: underline;
+}
+.description > a:hover,
+.copyright > a:hover {
+  text-decoration: none;
 }
