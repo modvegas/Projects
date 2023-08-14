@@ -29,21 +29,27 @@ const colors = [
 ];
 function scrollDetect() {
   var lastScroll = 0;
-
+  let counter = 0;
   window.onscroll = function () {
     let currentScroll =
       document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
 
-    let counter = 0;
-
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
-      document.getElementById("body").style.background = colors[counter];
       counter++;
+      document.getElementById("body").style.background = colors[counter];
+      if (counter > 7) {
+        return 7;
+      }
+      console.log(counter);
     } else {
       lastScroll = currentScroll;
-      document.getElementById("body").style.background = colors[counter];
       counter--;
+      document.getElementById("body").style.background = colors[counter];
+      if (counter < 0) {
+        return 0;
+      }
+      console.log(counter);
     }
   };
 }

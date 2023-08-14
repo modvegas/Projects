@@ -1,9 +1,7 @@
 html {
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y;
+  scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-behavior: smooth;
-  background-color: #ff608c;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -14,11 +12,10 @@ a:active {
   transition: background-color 1000ms linear;
 }
 body {
-  background-color: white;
+  scroll-snap-type: y mandatory;
+  background-color: #ff608c;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  scroll-snap-type: x mandatory;
   transition: background-color 2s;
 }
 a {
