@@ -2,6 +2,7 @@ html {
   scroll-snap-type: mandatory;
   scroll-snap-type: y;
   scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -17,6 +18,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-snap-type: x mandatory;
+  transition: background-color 2s;
 }
 a {
   text-decoration: none;
@@ -88,15 +90,13 @@ p {
 .copyright > a:hover {
   text-decoration: none;
 }
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-  text-align: center;
-  position: relative;
+.page {
+  height: 80vh;
 }
 .page {
   padding-top: 23vh;
   text-align: center;
+  cursor: default;
 }
 .page > img {
   width: 420px;
@@ -114,7 +114,7 @@ section {
   color: #fff;
   font-size: 15px;
 }
-.selectors > li:nth-of-type(1) a:active::before {
+/* .selectors > li:nth-of-type(1) a:active::before {
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
@@ -125,43 +125,30 @@ section {
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
   background-color: #fff;
-}
-#issue7 {
-  background-color: #ff608c;
-}
-#issue6 {
-}
-#issue5 {
-  background-color: #00c1b5;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-#issue4 {
-  background-color: #ff6519;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-#issue3 {
-  background-color: #ffbe00;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-#issue2 {
-  background-color: #1d3fbb;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-#issue1 {
-  background-color: #e30512;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
+} */
 
 .issue6-order > a {
   color: #e568ac;
 }
+
+/* [data-item="issue7"] {
+  background-color: #ff608c;
+}
+[data-item="issue6"] {
+  background-color: #fff;
+}
+[data-item="issue5"] {
+  background-color: #00c1b5;
+}
+[data-item="issue4"] {
+  background-color: #ff6519;
+}
+[data-item="issue3"] {
+  background-color: #ffbe00;
+}
+[data-item="issue2"] {
+  background-color: #1d3fbb;
+}
+[data-item="issue1"] {
+  background-color: #e30512;
+} */
