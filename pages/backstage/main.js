@@ -9,7 +9,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        800,
+        500,
         function () {
           window.location.hash = href;
           $("body").css("background-color", colors[issueNumber - 1]);
@@ -17,40 +17,36 @@ $(document).ready(function () {
       );
     }
   });
-  function loop() {
-    $(".page").bind("mousewheel", function (e) {
-      var hash = window.location.hash;
-      hash = hash.startsWith("#") ? hash.substring(1) : hash;
-      var issueNumber = hash.slice(-1);
-      e.preventDefault();
-      window.location.hash = hash;
-      if (e.originalEvent.wheelDelta / 120 > 0) {
-        $("html,body").animate(
-          {
-            scrollTop: $("#issue" + ("issueNumber" + 1).toString()).offset()
-              .top,
-          },
-          300,
-          function () {
-            $("body").css("background-color", colors[issueNumber - 1]);
-          }
-        );
-        console.log(issueNumber);
-      } else {
-        $("html,body").animate(
-          {
-            scrollTop: $("#issue" + (issueNumber - 1).toString()).offset().top,
-          },
-          300,
-          function () {
-            $("body").css("background-color", colors[issueNumber - 1]);
-          }
-        );
-        console.log(issueNumber);
-      }
-    });
-  }
-  loop();
+  $("html, body").bind("mousewheel", function (e) {
+    var hash = window.location.hash;
+    hash = hash.startsWith("#") ? hash.substring(1) : hash;
+    var issueNumber = hash.slice(-1);
+    e.preventDefault();
+    window.location.hash = hash;
+    if (e.originalEvent.wheelDelta / 520 > 0) {
+      $("html,body").animate(
+        {
+          scrollTop: $("#issue" + ("issueNumber" + 1).toString()).offset().top,
+        },
+        300,
+        function () {
+          $("body").css("background-color", colors[issueNumber - 1]);
+        }
+      );
+      console.log(issueNumber);
+    } else {
+      $("html,body").animate(
+        {
+          scrollTop: $("#issue" + (issueNumber - 1).toString()).offset().top,
+        },
+        300,
+        function () {
+          $("body").css("background-color", colors[issueNumber - 1]);
+        }
+      );
+      console.log(issueNumber);
+    }
+  });
   $.fn.isInViewport = function () {
     let elementTop = $(this).offset().top;
     let elementBottom = elementTop + $(this).outerHeight();
@@ -61,7 +57,7 @@ $(document).ready(function () {
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 });
-var colors = ["red", "blue", "magenta", "green"];
+var colors = ["red", "blue", "magenta", "green", "yellow", "white", "purple"];
 
 // var colorsObj = {issue1:'red',issue2:'blue'};
 
