@@ -17,6 +17,7 @@ a {
 .abstract-button {
   background-color: #00c1b5;
   color: #fff;
+  transition: ease-in-out 0.5s;
 }
 .abstract-button:hover {
   background-color: #11d1b5;
@@ -25,6 +26,7 @@ a {
 .backstages-button {
   background-color: #ff6519;
   color: #fff;
+  transition: ease-in-out 0.5s;
 }
 .backstages-button:hover {
   background-color: #ffaa19;
