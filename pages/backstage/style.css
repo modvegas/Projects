@@ -3,6 +3,7 @@ html {
   scroll-snap-type: y;
   scroll-snap-points-y: repeat(100vh);
   scroll-behavior: smooth;
+  background-color: #ff608c;
 }
 ::-webkit-scrollbar {
   display: none;

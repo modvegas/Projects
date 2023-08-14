@@ -16,7 +16,7 @@ $(document).ready(function () {
   });
 });
 
-var classList = ["red", "blue", "yellow", "orange", "teal", "white", "pink"];
+// var classList = ["red", "blue", "yellow", "orange", "teal", "white", "pink"];
 
 const colors = [
   "#e30512",
