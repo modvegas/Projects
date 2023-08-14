@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  width: auto;
+  padding: 150px;
+  text-decoration: none;
+}
+.abstract-button {
+  background-color: #00c1b5;
+  color: #fff;
+}
+.abstract-button:hover {
+  background-color: #11d1b5;
+  color: #000;
+}
+.backstages-button {
+  background-color: #ff6519;
+  color: #fff;
+}
+.backstages-button:hover {
+  background-color: #ffaa19;
+  color: #000;
+}

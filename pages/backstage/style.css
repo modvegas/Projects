@@ -131,24 +131,24 @@ p {
   color: #e568ac;
 }
 
-/* [data-item="issue7"] {
+.pink {
   background-color: #ff608c;
 }
-[data-item="issue6"] {
+.white {
   background-color: #fff;
 }
-[data-item="issue5"] {
+.teal {
   background-color: #00c1b5;
 }
-[data-item="issue4"] {
+.orange {
   background-color: #ff6519;
 }
-[data-item="issue3"] {
+.yellow {
   background-color: #ffbe00;
 }
-[data-item="issue2"] {
+.blue {
   background-color: #1d3fbb;
 }
-[data-item="issue1"] {
+.red {
   background-color: #e30512;
-} */
+}
