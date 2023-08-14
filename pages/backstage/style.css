@@ -1,15 +1,10 @@
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y;
   scroll-snap-points-y: repeat(100vh);
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   display: none;
-}
-a:active {
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
 }
 body {
   scroll-snap-type: y mandatory;
