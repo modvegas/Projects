@@ -3,14 +3,12 @@ $(document).ready(function () {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
-      debugger;
       $("html,body").animate(
         {
           scrollTop: $(hash).offset().top,
         },
-        1000,
+        800,
         function () {
-          debugger;
           window.location.hash = hash;
         }
       );

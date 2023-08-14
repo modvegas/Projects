@@ -1,14 +1,19 @@
 html {
   scroll-snap-type: mandatory;
+  scroll-snap-type: y;
   scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
   display: none;
 }
+a:active {
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
 body {
+  background-color: white;
   margin: 0;
-  background-color: #ff608c;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-snap-type: x mandatory;
@@ -109,13 +114,54 @@ section {
   color: #fff;
   font-size: 15px;
 }
-#issue7,
-.issue7:active {
-  scroll-behavior: smooth;
-  transition: all ease-in 1s;
+.selectors > li:nth-of-type(1) a:active::before {
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  background-color: #ff608c;
+}
+.selectors > li:nth-of-type(2) a:active::before {
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  background-color: #fff;
+}
+#issue7 {
+  background-color: #ff608c;
 }
 #issue6 {
-  scroll-behavior: smooth;
-  background-color: #fff;
-  transition: all ease-in 1s;
+}
+#issue5 {
+  background-color: #00c1b5;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+#issue4 {
+  background-color: #ff6519;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+#issue3 {
+  background-color: #ffbe00;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+#issue2 {
+  background-color: #1d3fbb;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+#issue1 {
+  background-color: #e30512;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.issue6-order > a {
+  color: #e568ac;
 }
