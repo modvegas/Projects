@@ -1,13 +1,11 @@
 html {
-  scroll-snap-type: y;
-  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 body {
-  scroll-snap-type: y mandatory;
   background-color: #ff608c;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -83,10 +81,13 @@ p {
 .copyright > a:hover {
   text-decoration: none;
 }
-.page {
-  height: 80vh;
+.pages {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 .page {
+  scroll-snap-align: start;
+  height: 80vh;
   padding-top: 23vh;
   text-align: center;
   cursor: default;
