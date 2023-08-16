@@ -66,8 +66,6 @@ nav > .active {
 .video-container {
   max-width: 1144px;
 }
-.video-container:hover {
-}
 .video-container > img {
   overflow-clip-margin: content-box;
   overflow: clip;
