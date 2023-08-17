@@ -44,7 +44,29 @@ nav > a:hover {
   border-radius: 45px;
   font-size: 18px;
   font-weight: 700;
+}
+.download-link-large > a {
+  margin-top: 48px;
+  width: 200px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #04ddb2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: LabGrotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
   transition: 0.2s ease-in-out;
+  box-shadow: 0 10px 20px -8px transparent;
+}
+.download-link-large > a:hover {
+  color: #fff;
+  transform: scale3d(1.05, 1.05, 1.05);
+  text-decoration: none;
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
 }
 nav > .active {
   font-weight: 600;
@@ -62,6 +84,10 @@ nav > .active {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 60px;
+}
+.last-content {
+  margin-bottom: 100px;
 }
 .video-container {
   max-width: 1144px;
@@ -78,6 +104,7 @@ nav > .active {
   transform: scale3d(1.03, 1.03, 1.03);
   box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25),
     0 0 20px 0 rgba(0, 0, 0, 0.03);
+  cursor: pointer;
 }
 .page-name {
   font-size: 80px;
@@ -99,4 +126,73 @@ nav > .active {
   margin-bottom: 40px;
   max-width: 700px;
   text-align: center;
+}
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.4s ease;
+}
+.video-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+.modal-backdrop-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-iframe-container {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+.modal-iframe-radius {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 100px 160px -60px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.iframe-container > iframe {
+  width: 100%;
+}
+::selection {
+  background: rgba(0, 230, 184, 0.2);
+}
+.modal {
+  transition: 0.4s ease;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 64px 64px;
+  background: #fff;
+  font-family: LabGrotesque, Helvetica Neue, Helvetica, Arial, sans-serif;
+  cursor: default;
 }
