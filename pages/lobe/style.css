@@ -41,9 +41,6 @@ nav > a:hover {
   color: #000;
   transform: scale3d(1.2, 1.2, 1.2);
 }
-section {
-  padding-top: 100px;
-}
 .download-link > a {
   background-color: #04ddb2;
   padding: 14px 23px 14px 23px;
@@ -92,6 +89,7 @@ section {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-top: 100px;
 }
 .center-content {
   display: flex;
@@ -99,6 +97,12 @@ section {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 60px;
+}
+section > .center-content > p {
+  font-size: 32px;
+  line-height: 1.45;
+  margin-bottom: 40px;
+  max-width: 850px;
 }
 .last-content {
   margin-bottom: 140px;
@@ -140,6 +144,79 @@ section {
   margin-bottom: 40px;
   max-width: 700px;
   text-align: center;
+}
+.content-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1312px;
+  margin: auto;
+}
+.blog-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1312px;
+  margin: auto;
+}
+.blog-card {
+  position: relative;
+  width: 600px;
+  border-radius: 32px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 28px 28px 96px;
+  display: block;
+  color: #333;
+  transition: 0.4s ease;
+  box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25),
+    0 0 20px 0 rgba(0, 0, 0, 0.03);
+}
+.blog-card:hover {
+  transform: scale3d(1.01, 1.01, 1.01);
+}
+.blog-content-image {
+  position: relative;
+  width: 100%;
+  padding-top: 56.66%;
+  overflow: hidden;
+}
+.blog-content-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef0f2;
+  overflow: hidden;
+}
+.blog-content-image-container > img {
+  height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.blog-content-card {
+  padding: 32px 40px 52px;
+  text-align: left;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.63;
+  margin-bottom: 8px;
+}
+.card-text {
+  line-height: 1.67;
+  margin-bottom: 56px;
+}
+.card-footer {
+  font-size: 20px;
+  font-weight: 500;
+  color: #989898;
 }
 .video-overlay {
   position: fixed;

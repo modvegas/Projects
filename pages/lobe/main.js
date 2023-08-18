@@ -13,30 +13,26 @@ const footerLinks = [
   },
 ];
 
+function activePage() {
+  const href = window.location.href;
+  const segments = new URL(href).pathname.split("/");
+  const last = segments.pop() || segments.pop();
+  console.log(last);
+  if (last == "index.html") {
+    $(".tourpage").addClass("active");
+  } else if (last == "blog.html") {
+    $(".blogpage").addClass("active");
+  }
+}
 window.onload = () => {
-  var part = [];
-  var currentURL = window.location.href;
-  part = currentURL.toString().split("/");
-  console.log(part[part.length - 1]);
-  $(".header").append(`
-    <div class="logo">
-      <a href="#"><img src="images/top-logo.png" alt="Lobe Ai Logo" /> </a>
-    </div>
-    <nav>
-      <a href="#">Overview</a>
-      <a href="#">Examples</a>
-      <a href="index.html" class="tourpage">Tour</a>
-      <a href="blog.html" class="blogpage">Blog</a>
-      <a href="#">Help</a>
-    </nav>
-    <div class="download-link"><a href="#">Download</a></div>`);
-
+  activePage();
   $(".last-content").append(`
     <h1 class="page-name" style="max-width: 60%">
       Train your app with Lobe
     </h1>
     <div class="download-link-large"><a href="#">Download</a></div>
     `);
+
   $(".footer").append(`
     <div class="footer-container">
       <div class="footer-left">
@@ -53,11 +49,7 @@ window.onload = () => {
         ><a href="#"><img src="images/yt.png" alt="Youtube Channel" /> </a>
       </div>
     </div>`);
-  if (currentURL == "index.html") {
-    $(".tourpage").addClass("active");
-  } else if (currentURL == "blog.html") {
-    $("#blogpage").addClass("active");
-  }
+
   footerLinks.map((item) => {
     $(`
     <div class="footer-column">

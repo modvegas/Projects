@@ -15,67 +15,112 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script>
-      $("#blogpage").addClass("active");
-    </script>
     <title>Lobe</title>
   </head>
   <body>
     <div class="root">
-      <div class="header"></div>
-      <section class="section">
-        <div class="center-content"></div>
-        <div class="center-content last-content">
-          <h1 class="page-name" style="max-width: 60%">
-            Train your app with Lobe
-          </h1>
-          <div class="download-link-large"><a href="#">Download</a></div>
+      <div class="header">
+        <div class="logo">
+          <a href="#"><img src="images/top-logo.png" alt="Lobe Ai Logo" /> </a>
         </div>
-        <div class="modal" id="video-modal" tabindex="-1" role="dialog">
-          <div class="video-overlay">
-            <button class="video-close" data-dismiss="modal">
-              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
-                <g
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                  opacity="0.699999988"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <g
-                    id="Button-/-Close"
-                    transform="translate(5.000000, 5.000000)"
-                    stroke-width="2"
-                  >
-                    <g transform="translate(-5.000000, -5.000000)">
-                      <line x1="27" y1="5" x2="5" y2="27"></line>
-                      <line x1="5" y1="5" x2="27" y2="27"></line>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <div class="modal-backdrop-background" data-dismiss="modal">
-              <div class="modal-iframe-container">
-                <div class="modal-iframe-radius">
-                  <div class="iframe-container">
-                    <iframe
-                      class="youtube-iframe"
-                      width="1280"
-                      height="720"
-                      src="https://www.youtube.com/embed/Mdcw3Sb98DA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+        <nav>
+          <a href="#">Overview</a>
+          <a href="#">Examples</a>
+          <a href="index.html" class="tourpage">Tour</a>
+          <a href="blog.html" class="blogpage">Blog</a>
+          <a href="#">Help</a>
+        </nav>
+        <div class="download-link"><a href="#">Download</a></div>
+      </div>
+      <section class="section">
+        <div class="center-content">
+          <h1 class="page-name">
+            Lobe
+            <span class="green-name">Blog</span>
+          </h1>
+          <p class="context-desc">
+            Read about our newest releases, and get tips on how to create custom
+            machine learning models with Lobe.
+          </p>
+          <div class="blog-entries">
+            <a href="#" class="blog-card"
+              ><div class="blog-content-image">
+                <div class="blog-content-image-container">
+                  <img src="images/post1.png" alt="Blog Post" />
                 </div>
               </div>
-            </div>
+              <div class="blog-content-card">
+                <div class="card-title">Use your model in Power Platform</div>
+                <div class="card-text">
+                  We're excited to announce a new integration with Microsoft
+                  Power Platform.
+                </div>
+                <div class="card-footer">Release</div>
+              </div></a
+            >
+            <a href="#" class="blog-card"
+              ><div class="blog-content-image">
+                <div class="blog-content-image-container">
+                  <img src="images/post2.jpg" alt="Blog Post" />
+                </div>
+              </div>
+              <div class="blog-content-card">
+                <div class="card-title">Use your model in Power Platform</div>
+                <div class="card-text">
+                  We're excited to announce a new integration with Microsoft
+                  Power Platform.
+                </div>
+                <div class="card-footer">Release</div>
+              </div></a
+            >
+            <a href="#" class="blog-card"
+              ><div class="blog-content-image">
+                <div class="blog-content-image-container">
+                  <img src="images/post3.jpg" alt="Blog Post" />
+                </div>
+              </div>
+              <div class="blog-content-card">
+                <div class="card-title">Use your model in Power Platform</div>
+                <div class="card-text">
+                  We're excited to announce a new integration with Microsoft
+                  Power Platform.
+                </div>
+                <div class="card-footer">Release</div>
+              </div></a
+            >
+            <a href="#" class="blog-card"
+              ><div class="blog-content-image">
+                <div class="blog-content-image-container">
+                  <img src="images/post4.jpg" alt="Blog Post" />
+                </div>
+              </div>
+              <div class="blog-content-card">
+                <div class="card-title">Use your model in Power Platform</div>
+                <div class="card-text">
+                  We're excited to announce a new integration with Microsoft
+                  Power Platform.
+                </div>
+                <div class="card-footer">Release</div>
+              </div></a
+            >
+            <a href="#" class="blog-card"
+              ><div class="blog-content-image">
+                <div class="blog-content-image-container">
+                  <img src="images/post5.jpg" alt="Blog Post" />
+                </div>
+              </div>
+              <div class="blog-content-card">
+                <div class="card-title">Use your model in Power Platform</div>
+                <div class="card-text">
+                  We're excited to announce a new integration with Microsoft
+                  Power Platform.
+                </div>
+                <div class="card-footer">Release</div>
+              </div></a
+            >
           </div>
         </div>
+        <div class="center-content last-content"></div>
       </section>
       <div class="footer"></div>
     </div>
