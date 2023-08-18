@@ -93,7 +93,6 @@ const generateJson = () => {
         </div>`
     );
   });
-  function footerLast() {}
 };
 
 window.onload = () => {

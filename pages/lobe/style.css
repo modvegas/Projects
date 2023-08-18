@@ -260,9 +260,10 @@ nav > .active {
 .footer-socials > a {
   margin-right: 15px;
 }
-.footer-socials > a > svg {
+.footer-socials > a > img {
   transition: 0.2s ease;
+  width: 40px;
 }
-.footer-socials > a > svg:hover {
+.footer-socials > a > img:hover {
   transform: scale3d(1.15, 1.15, 1.15);
 }
