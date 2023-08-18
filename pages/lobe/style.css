@@ -129,9 +129,15 @@ section > .center-content > p {
   line-height: 1.05;
   margin: 30px;
   margin-bottom: 12px;
-  font-weight: 800;
+  font-weight: 900;
   color: #333;
   cursor: default;
+}
+.article-title {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: auto auto 40px;
 }
 .green-name {
   color: #04ddb2;
@@ -210,6 +216,7 @@ section > .center-content > p {
   margin-bottom: 8px;
 }
 .card-text {
+  font-size: 24px;
   line-height: 1.67;
   margin-bottom: 56px;
 }
