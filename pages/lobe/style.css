@@ -245,6 +245,11 @@ section > .center-content > p {
   max-width: 828px;
   margin: auto;
   text-align: left;
+  cursor: default;
+}
+.article-content a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .article-content p {
   width: 100%;

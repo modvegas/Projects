@@ -69,7 +69,6 @@ function activePage() {
   const href = window.location.href;
   const segments = new URL(href).pathname.split("/");
   const last = segments.pop() || segments.pop();
-  console.log(last);
   if (last == "index.html") {
     $(".tourpage").addClass("active");
   } else if (last == "blog.html") {
