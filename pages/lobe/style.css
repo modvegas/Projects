@@ -142,6 +142,13 @@ section > .center-content > p {
 .green-name {
   color: #04ddb2;
 }
+.article-date {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  color: #989898;
+  margin: auto auto 48px;
+}
 .context-desc {
   cursor: default;
   font-size: 32px;
@@ -224,6 +231,52 @@ section > .center-content > p {
   font-size: 20px;
   font-weight: 500;
   color: #989898;
+}
+.header-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  border-radius: 24px;
+  margin: auto auto 48px;
+}
+.article-content {
+  width: 100%;
+  max-width: 828px;
+  margin: auto;
+  text-align: left;
+}
+.article-content p {
+  width: 100%;
+  max-width: 700px;
+  font-size: 24px;
+  margin: auto auto 24px;
+  line-height: 1.5;
+}
+.article-content h2 {
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.56;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 80px auto 8px;
+}
+.article-image-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+.article-image {
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 16px;
+}
+.inline-image-desc {
+  width: 100%;
+  font-weight: 500;
+  color: #737373;
+  font-size: 16px;
+  margin-top: 16px;
 }
 .video-overlay {
   position: fixed;

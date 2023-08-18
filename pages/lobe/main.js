@@ -4,49 +4,49 @@ const blogContent = [
     title: "Use your model in Power Platform",
     description:
       "We're excited to announce a new integration with Microsoft Power Platform.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post2.jpg",
     title: "Introducing new ways to use your model",
     description:
       "Lobe 0.9 introduces new ways of using and exporting your model to your app.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post3.jpg",
     title: "Using your model 101",
     description:
       "Learn everything you need to know to export your model and use it in your app.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post4.jpg",
     title: "Machine Learning Kit with Adafruit",
     description:
       "Introducing a brand new machine learning kit from Adafruit and Lobe.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post5.jpg",
     title: "Four New Features in Lobe",
     description:
       "Select your camera source, export your model to new formats, and more in the new Lobe.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post6.jpg",
     title: "Endless Camera Sources",
     description:
       "Deep dive into the new camera sources and all the possibilities they open up inside of Lobe.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
   {
     img: "images/post7.jpg",
     title: "Machine Learning Made Easy",
     description:
       "Everything you need to train custom machine learning models in a free, easy to use app.",
-    url: "#",
+    url: "Blog-Post-Example.html",
   },
 ];
 
