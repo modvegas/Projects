@@ -283,6 +283,10 @@ section > .center-content > p {
   font-size: 16px;
   margin-top: 16px;
 }
+.modal-backdrop-background {
+  backdrop-filter: blur(20px);
+}
+
 .video-overlay {
   position: fixed;
   top: 0;
@@ -302,12 +306,14 @@ section > .center-content > p {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 32px;
-  height: 32px;
   cursor: pointer;
   transition: 0.2s;
   z-index: 2;
   -webkit-tap-highlight-color: transparent;
+}
+.video-close img {
+  width: 32px;
+  height: 32px;
 }
 .modal-backdrop-background {
   position: absolute;
@@ -324,11 +330,14 @@ section > .center-content > p {
   align-items: center;
   margin: 0 auto;
   position: relative;
+  padding: 50px;
 }
 .modal-iframe-radius {
   position: relative;
+  height: 100%;
   width: 100%;
   max-height: 100%;
+  max-width: 100%;
   overflow: hidden;
   background: #000;
   box-shadow: 0 100px 160px -60px rgba(0, 0, 0, 0.4);
