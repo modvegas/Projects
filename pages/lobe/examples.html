@@ -20,10 +20,12 @@
   </head>
   <body>
     <div class="root">
+      <div class="logo">
+        <a href="../../../index.html"
+          ><img src="images/top-logo.png" alt="Lobe Ai Logo" />
+        </a>
+      </div>
       <div class="header">
-        <div class="logo">
-          <a href="#"><img src="images/top-logo.png" alt="Lobe Ai Logo" /> </a>
-        </div>
         <nav>
           <a href="#">Overview</a>
           <a href="examples.html" class="example-page">Examples</a>
@@ -32,6 +34,40 @@
           <a href="#">Help</a>
         </nav>
         <div class="download-link"><a href="#">Download</a></div>
+        <div class="dropdown-btn"></div>
+        <div class="header-menu">
+          <div class="header-menu-blur"></div>
+          <div
+            style="
+              transform: scale(1);
+              opacity: 1;
+              transform-origin: left center;
+            "
+          >
+            <nav class="header-nav">
+              <a class="nav-link" href="/"><div>Overview</div></a
+              ><a
+                class="nav-link nav-link--selected"
+                href="/examples"
+                aria-current="page"
+                ><div>Examples</div></a
+              ><a class="nav-link" href="/tour"><div>Tour</div></a
+              ><a class="nav-link" href="/blog"><div>Blog</div></a
+              ><a
+                title="Header link"
+                href="/docs/welcome/welcome"
+                class="nav-link"
+                >Help</a
+              >
+            </nav>
+          </div>
+          <div
+            class="header-menu-download-button-container"
+            style="opacity: 1; transform: scale(1)"
+          >
+            <button class="header-menu-download-button">Download</button>
+          </div>
+        </div>
       </div>
       <section class="section">
         <div class="center-content">

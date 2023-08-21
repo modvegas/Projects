@@ -12,15 +12,24 @@ a {
   color: #333;
 }
 .header {
-  position: fixed;
-  width: 93%;
   display: flex;
-  justify-content: space-between;
+  position: fixed;
+  width: 92%;
+  justify-content: center;
   padding: 25px 0 0;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0) 0px 30px 60px -10px;
   backdrop-filter: blur(20px);
   z-index: 100;
+}
+.header-menu {
+  display: none;
+}
+.logo {
+  position: fixed;
+  left: 4%;
+  top: 2%;
+  z-index: 101;
 }
 .logo > a {
   position: absolute;
@@ -30,16 +39,32 @@ a {
   height: 21px;
   display: block;
 }
-nav > a {
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 55px;
+}
+nav a {
   color: #333;
   margin: 0 24px;
   transition: 0.2s ease-in-out;
   font-size: 18px;
   font-weight: 500;
+  display: inline-block;
+  transform: translate(-42px);
 }
-nav > a:hover {
+nav a:hover {
   color: #000;
   transform: scale3d(1.2, 1.2, 1.2);
+}
+.download-link {
+  position: fixed;
+  transition: 0.2s ease-in-out;
+  right: 20px;
+}
+.download-link:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 .download-link > a {
   background-color: #04ddb2;
@@ -49,12 +74,6 @@ nav > a:hover {
   border-radius: 45px;
   font-size: 18px;
   font-weight: 700;
-}
-.download-link {
-  transition: 0.2s ease-in-out;
-}
-.download-link:hover {
-  transform: scale3d(1.05, 1.05, 1.05);
 }
 .download-link-large > a {
   margin-top: 48px;
@@ -467,4 +486,17 @@ section > .center-content > p {
   background-color: #eef0f2;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
+}
+.header-mini {
+  display: none;
+}
+@media (max-width: 800px) {
+  .header {
+    display: none;
+  }
+  .header-menu {
+    height: 564px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -10px;
+    display: block;
+  }
 }
