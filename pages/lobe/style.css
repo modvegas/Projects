@@ -209,6 +209,9 @@ section > .center-content > p {
   box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25),
     0 0 20px 0 rgba(0, 0, 0, 0.03);
 }
+.example-content-image {
+  padding-top: 67.86%;
+}
 .blog-content-image {
   position: relative;
   width: 100%;
@@ -446,4 +449,22 @@ section > .center-content > p {
 }
 .footer-socials > a > img:hover {
   transform: scale3d(1.15, 1.15, 1.15);
+}
+
+.example-content-image img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+.example-content-image video {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #eef0f2;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
 }
