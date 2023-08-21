@@ -222,7 +222,7 @@ function loadExamples() {
           <div class="example-content-image">
             <div class="blog-content-image-container">
               <img src="${item.img}" alt="Blog Post" />
-              <video class="" playsinline="" webkit-playsinline="true" loop="" autoplay="true" title="Video of the ${item.title}" style="visibility: visible">
+              <video class="" playsinline="" webkit-playsinline="true" muted loop="" autoplay="true" title="Video of the ${item.title}" style="visibility: visible">
                 <source src="${item.video}" type="video/mp4" />
               </video>
             </div>
