@@ -50,6 +50,105 @@ const blogContent = [
   },
 ];
 
+const exampleContent = [
+  {
+    img: "images/examples/plants.jpg",
+    title: "Plant Species",
+    description:
+      "We're excited to announce a new integration with Microsoft Power Platform.",
+  },
+  {
+    img: "images/examples/hand.jpg",
+    title: "Hand Gestures",
+    description:
+      "Lobe 0.9 introduces new ways of using and exporting your model to your app.",
+  },
+  {
+    img: "images/examples/burn.jpg",
+    title: "Personal Trainer",
+    description:
+      "Learn everything you need to know to export your model and use it in your app.",
+  },
+  {
+    img: "images/examples/laughing.jpg",
+    title: "Emotional Reactions",
+    description:
+      "Introducing a brand new machine learning kit from Adafruit and Lobe.",
+  },
+  {
+    img: "images/examples/painting.jpg",
+    title: "Interactive Painting",
+    description:
+      "Select your camera source, export your model to new formats, and more in the new Lobe.",
+  },
+  {
+    img: "images/examples/mask.jpg",
+    title: "Safety Precautions",
+    description:
+      "Deep dive into the new camera sources and all the possibilities they open up inside of Lobe.",
+  },
+  {
+    img: "images/examples/whales.jpg",
+    title: "Whale Watching",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/bees.jpg",
+    title: "Beehive Health",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/sleep.jpg",
+    title: "Baby Monitor",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/check.jpg",
+    title: "Smart Checkout",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/wild.jpg",
+    title: "Fire Watch",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/micro.jpg",
+    title: "Scientific Research",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/elephant.jpg",
+    title: "Wildlife Behavior",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/compress.jpg",
+    title: "Telescopic Imagery",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/telescope.jpg",
+    title: "Equipment Analytics",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+  {
+    img: "images/examples/deforest.jpg",
+    title: "Aerial Imagery",
+    description:
+      "Everything you need to train custom machine learning models in a free, easy to use app.",
+  },
+];
+
 const footerLinks = [
   {
     title: "Abot",
@@ -74,8 +173,12 @@ function activePage() {
   } else if (last == "blog.html") {
     $(".blogpage").addClass("active");
     loadBlog();
+  } else if (last == "examples.html") {
+    $(".example-page").addClass("active");
+    loadExamples();
   }
 }
+
 function loadBlog() {
   blogContent.map((item) => {
     $(".blog-entries").append(`
@@ -93,6 +196,24 @@ function loadBlog() {
             <div class="card-footer">Release</div>
         </div>
     </a>`);
+  });
+}
+
+function loadExamples() {
+  exampleContent.map((item) => {
+    $(".example-posts").append(`
+        <div class="example-card">
+          <div class="blog-content-image">
+            <div class="blog-content-image-container">
+              <img src="${item.img}" alt="Blog Post" />
+            </div>
+          </div>
+          <div class="blog-content-card">
+            <div class="card-title">${item.title}</div>
+            <div class="card-text">${item.description}</div>
+          </div>
+        </div>
+    `);
   });
 }
 
