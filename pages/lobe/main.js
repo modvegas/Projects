@@ -70,98 +70,98 @@ const exampleContent = [
     title: "Personal Trainer",
     description:
       "Train your app to recognize different workout positions to create an automated personal trainer that counts your reps.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/burn.mp4",
   },
   {
     img: "images/examples/laughing.jpg",
     title: "Emotional Reactions",
     description:
       "Train your app to react to different expressions allowing people to send emoji reactions using just their face.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/laughing.mp4",
   },
   {
     img: "images/examples/painting.jpg",
     title: "Interactive Painting",
     description:
       "Train your app to respond with sounds and stories while kids draw to create engaging learning experiences.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/painting.mp4",
   },
   {
     img: "images/examples/mask.jpg",
     title: "Safety Precautions",
     description:
       "Train your app to monitor when masks are being correctly worn to help encourage proper safety precautions.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/mask.mp4",
   },
   {
     img: "images/examples/whales.jpg",
     title: "Whale Watching",
     description:
       "Train your app to detect marine life in tourist photos to help conservationists map and protect the ocean.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/whales.mp4",
   },
   {
     img: "images/examples/bees.jpg",
     title: "Beehive Health",
     description:
       "Train your app to monitor the entrance of hives to help beekeepers track and analyze the health of their colonies.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/bees.mp4",
   },
   {
     img: "images/examples/sleep.jpg",
     title: "Baby Monitor",
     description:
       "Train your app to detect when babies are sleeping or awake to notify parents before they start crying.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/sleep.mp4",
   },
   {
     img: "images/examples/check.jpg",
     title: "Smart Checkout",
     description:
       "Train your app to recognize different types of produce to help checkout faster without the need to remember price look-up codes.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/check.mp4",
   },
   {
     img: "images/examples/wild.jpg",
     title: "Fire Watch",
     description:
       "Train your app to detect smoke and flames using remote cameras to help spot new wildfires before it's too late.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/wild.mp4",
   },
   {
     img: "images/examples/micro.jpg",
     title: "Scientific Research",
     description:
       "Train your app to detect organisms under a microscope to help researchers analyze large quantities of scientific samples.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/micro.mp4",
   },
   {
     img: "images/examples/elephant.jpg",
     title: "Wildlife Behavior",
     description:
       "Train your app to detect wildlife behavior with remote cameras to track population and migration patterns over a large area.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/elephant.mp4",
   },
   {
     img: "images/examples/compress.jpg",
     title: "Telescopic Imagery",
     description:
       "Train your app to monitor analog gauges and equipment to provide modern digital readouts and real time analytics.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/compress.mp4",
   },
   {
     img: "images/examples/telescope.jpg",
     title: "Equipment Analytics",
     description:
       "Train your app to recognize different celestial bodies to help astronomers analyze large amounts of telescopic imagery.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/telescope.mp4",
   },
   {
     img: "images/examples/deforest.jpg",
     title: "Aerial Imagery",
     description:
       "Train your app to monitor aerial imagery to gain insights into macro level changes happening around the globe.",
-    video: "images/examples/plants.mp4",
+    video: "images/examples/deforest.mp4",
   },
 ];
 
@@ -222,7 +222,7 @@ function loadExamples() {
           <div class="example-content-image">
             <div class="blog-content-image-container">
               <img src="${item.img}" alt="Blog Post" />
-              <video class="" playsinline="" webkit-playsinline="true" loop="" preload="none" title="Video of the ${item.title}" style="visibility: visible">
+              <video class="" playsinline="" webkit-playsinline="true" loop="" autoplay="true" title="Video of the ${item.title}" style="visibility: visible">
                 <source src="${item.video}" type="video/mp4" />
               </video>
             </div>
