@@ -14,16 +14,19 @@
       href="https://db.onlinewebfonts.com/c/5ffb14c9ea41286ce553095f37596444?family=Lab+Grotesque"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/page-icon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>Lobe</title>
   </head>
   <body>
     <div class="root">
+      <div class="logo">
+        <a href="../../../index.html"
+          ><img src="images/top-logo.png" alt="Lobe Ai Logo" />
+        </a>
+      </div>
       <div class="header">
-        <div class="logo">
-          <a href="#"><img src="images/top-logo.png" alt="Lobe Ai Logo" /> </a>
-        </div>
-        <nav>
+        <nav class="wide-menu">
           <a href="#">Overview</a>
           <a href="examples.html" class="example-page">Examples</a>
           <a href="index.html" class="tourpage">Tour</a>
@@ -31,6 +34,50 @@
           <a href="#">Help</a>
         </nav>
         <div class="download-link"><a href="#">Download</a></div>
+        <button class="header-menu-button" onClick="menuOpen()">
+          <?xml version="1.0" ?><svg
+            fill="none"
+            height="24"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 5H21"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 12H21"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 19H21"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="header-menu" id="nav-menu">
+          <div class="header-menu-blur"></div>
+          <div>
+            <nav class="header-nav">
+              <a href="#"><div>Overview</div></a>
+              <a href="examples.html"><div>Examples</div></a>
+              <a href="index.html"><div>Tour</div></a>
+              <a href="blog.html"><div>Blog</div></a>
+              <a href="#" class="nav-link">Help</a>
+            </nav>
+          </div>
+          <div class="menu-download-button-container">
+            <button class="header-menu-download-button">Download</button>
+          </div>
+        </div>
       </div>
       <section class="section">
         <div class="center-content">

@@ -235,7 +235,9 @@ function loadExamples() {
     `);
   });
 }
-
+function menuOpen() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
 window.onload = () => {
   activePage();
   $(".last-content").append(`
