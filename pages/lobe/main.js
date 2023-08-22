@@ -167,7 +167,7 @@ const exampleContent = [
 
 const footerLinks = [
   {
-    title: "Abot",
+    title: "About",
     links: ["Download", "Overview", "Examples", "Blog"],
   },
   {

@@ -530,6 +530,7 @@ section > .center-content > p {
     background-color: #fff;
     transition: 0.4s ease-in-out;
     backdrop-filter: blur(20px);
+    z-index: 200;
   }
   .header-nav {
     position: relative;
@@ -572,9 +573,50 @@ section > .center-content > p {
     font-size: 20px;
     border: none;
   }
+  .footer-copyright {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .footer-column {
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  .footer-column-header {
+    font-size: 16px;
+  }
+  .footer-column-link a {
+    font-size: 14px;
+  }
+  .footer-socials > a > img {
+    width: 34px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
 }
-
+@media (max-width: 700px) {
+  .page-name {
+    font-size: 60px;
+  }
+  .last-content > .page-name {
+    font-size: 48px;
+  }
+  section > .center-content > p {
+    font-size: 26px;
+  }
+  .example-card {
+    width: 90%;
+  }
+  .footer-copyright {
+    font-size: 12px;
+  }
+  .footer-socials > a > img {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
 .show {
   height: 450px;
-  backdrop-filter: blur(20px);
 }
