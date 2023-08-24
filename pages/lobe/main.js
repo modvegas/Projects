@@ -264,6 +264,26 @@ window.onload = () => {
       </div>
     </div>`);
 
+  $(".footer").append(`
+      <div class="footer-container footer-hidden">
+        <div class="footer-right">
+          <div class="footer-socials">
+            <a href="#"><img src="images/reddit.png" alt="Reddit Subforum" /></a
+            ><a href="#"><img src="images/twitter.png" alt="Twitter Acc" /></a
+            ><a href="#"><img src="images/yt.png" alt="Youtube Channel" /> </a>
+          </div>
+        </div>
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Lobe Ai Logo" />
+          </div>
+          <div class="footer-copyright">A product by Microsoft.</div>
+          <div class="footer-copyright">All rights reserved.</div>
+          <div class="footer-copyright">© Microsoft 2021</div>
+        </div>
+      </div>
+  `);
+
   footerLinks.map((item) => {
     $(`
     <div class="footer-column">
