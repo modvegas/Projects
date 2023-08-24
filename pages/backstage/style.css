@@ -28,7 +28,7 @@ a:hover {
   top: 0;
   z-index: 2;
 }
-.header > img {
+.header > a > img {
   width: 260px;
   vertical-align: middle;
 }
