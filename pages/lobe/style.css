@@ -527,51 +527,37 @@ section > .center-content > p {
     background-color: #eef0f2;
     z-index: 100;
   }
-
-  .hamburger {
-    cursor: pointer;
-    transform: translate(-8px, -1px);
-    transform: translate(-9px, -1px);
-  }
-
-  .hamburger span,
-  .hamburger span:after,
-  .hamburger span:before {
-    cursor: pointer;
-    border-radius: 1px;
+  .path {
+    content: " ";
     height: 2px;
-    width: 18px;
-    background: #333;
-    position: absolute;
-    display: inline-block;
-    content: "";
+    background-color: #000;
+    width: 70%;
+    margin: auto;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
   }
-
-  .hamburger span:before {
-    top: -5px;
-    left: 0;
+  .path:nth-child(1) {
+    position: relative;
+    top: -3px;
   }
-
-  .hamburger span:after {
-    bottom: -5px;
-    left: 0;
+  .path:nth-child(2) {
+    position: relative;
   }
-
-  .hamburger span,
-  .hamburger span:after,
-  .hamburger span:before {
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  .path:nth-child(3) {
+    position: relative;
+    top: 3px;
   }
-
-  .hamburger.active span {
-    background-color: transparent;
+  .cross > .path:nth-child(1) {
+    top: 1px;
+    transform: rotate(45deg);
   }
-
-  .hamburger.active span:after,
-  .hamburger.active span:before {
-    top: 0;
+  .cross > .path:nth-child(3) {
+    top: -1px;
+    transform: rotate(-45deg);
   }
-
+  .cross > .path:nth-child(2) {
+    display: none;
+  }
   .header {
     padding: 0;
     left: 0;
@@ -591,7 +577,6 @@ section > .center-content > p {
     background-color: #fff;
     transition: 0.4s ease-in-out;
     z-index: 200;
-    backdrop-filter: blur(20px);
   }
   .header-nav {
     position: relative;
@@ -761,4 +746,5 @@ section > .center-content > p {
 }
 .show {
   height: 450px;
+  backdrop-filter: blur(20px);
 }
