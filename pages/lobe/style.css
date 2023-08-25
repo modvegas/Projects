@@ -747,7 +747,7 @@ section > .center-content > p {
     width: 130%;
   }
 }
-.show {
+.menu-show {
   height: 450px;
   backdrop-filter: blur(20px);
 }

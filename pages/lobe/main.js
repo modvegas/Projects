@@ -236,7 +236,7 @@ function loadExamples() {
   });
 }
 function menuOpen() {
-  document.getElementById("nav-menu").classList.toggle("show");
+  document.getElementById("nav-menu").classList.toggle("menu-show");
   document.getElementById("hamburger").classList.toggle("cross");
 }
 window.onload = () => {
