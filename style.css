@@ -22,12 +22,21 @@ a:hover {
     0 0 20px 0 rgba(0, 0, 0, 0.03);
   font-weight: normal;
 }
+.container img {
+  max-height: 50px;
+}
+.container a {
+  filter: grayscale(100%);
+}
+.container a:hover {
+  filter: grayscale(0%);
+}
 .abstract-button {
-  background-color: #00c1b5;
+  background-color: #ccc;
   color: #333;
 }
 .abstract-button:hover {
-  background-color: #11d1b5;
+  background-color: #555;
   color: #fff;
 }
 .backstages-button {
