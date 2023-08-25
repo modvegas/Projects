@@ -740,6 +740,9 @@ section > .center-content > p {
   }
 }
 @media (max-width: 600px) {
+  .center-content {
+    padding-right: 30px;
+  }
   .section {
     width: 130%;
   }
