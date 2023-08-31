@@ -1,11 +1,25 @@
 body {
   margin: 0;
 }
+.background-pattern {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2ff;
+  opacity: 0.9;
+  background-image: radial-gradient(#d2d4f9 0.45px, #f2f2ff 0.45px);
+  background-size: 9px 9px;
+}
 .container {
   display: flex;
   justify-content: space-around;
   max-width: 90%;
   flex-wrap: wrap;
+  padding-top: 20px;
+}
+::selection {
+  background: rgba(252, 59, 11, 0.527);
 }
 a {
   color: #000;
@@ -54,4 +68,14 @@ a:hover {
 .lobe-button:hover {
   background-color: #00aaf2;
   color: #fff;
+}
+.title-container {
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+.page-title {
+  text-decoration: underline;
+  color: #180909;
+  cursor: default;
+  font-family: "Roboto Condensed", sans-serif;
 }
